@@ -75,6 +75,8 @@ footer {
   padding: 25px;
   background-color: #2b2b6b;
   color: #ffffff;
+  display: flex;
+  justify-content: center;
 }
 
 footer a {
