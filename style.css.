@@ -1,129 +1,42 @@
-body {
-  font-family: 'Georgia', serif;
-  color: #a28d7e;
-  background-color: #f4e9da;
-  margin: 0;
-  padding: 0;
-  line-height: 1.5;
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
-header {
-  background-color: #2b2b6b;
-  color: #f4e9da;
-  text-align: center;
-  padding: 40px 20px;
+label {
+  font-weight: bold;
+  color: #2b2b6b;
 }
 
-header h1 {
-  margin: 0;
-  font-size: 2.5rem;
-}
-
-main {
-  max-width: 700px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-section {
-  background-color: #f4e9da;
+input,
+textarea {
+  font: inherit;
+  padding: 10px;
   border: 2px solid #2b2b6b;
-  border-radius: 8px;
-  padding: 25px 30px;
-  margin-bottom: 30px;
-}
-
-section h2 {
-  color: #2b2b6b;
-  border-bottom: 2px solid #2b2b6b;
-  padding-bottom: 8px;
-  margin-top: 0;
-}
-
-
-section img {
-  width: 100%;
-  max-width: 350px;
-  display: block;
-  margin: 25px auto;
   border-radius: 6px;
+  margin-bottom: 10px;
 }
 
-ul {
-  list-style: none;
-  padding: 0;
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #c28a2c;
 }
 
-li {
-  padding: 6px 0 6px 20px;
-  position: relative;
-}
-
-li::before {
-  content: "•";
-  position: absolute;
-  left: 0;
-  color: #2b2b6b;
-}
-
-p {
-  font-size: 1.00rem;
-}
-
-footer {
-  text-align: center;
-  padding: 25px;
+button {
+  align-self: flex-start;
+  font: inherit;
+  padding: 10px 25px;
   background-color: #2b2b6b;
-  color: #ffffff;
-  display: flex;
-  justify-content: center;
-}
-
-footer a {
-  color: #ffd479;
-  text-decoration: underline;
-}
-
-footer a:hover,
-footer a:focus {
-  color: #ffffff;
-}
-
-
-nav ul {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-nav li::before {
-  content: none;
-  }
-
-nav li {
-  padding: 0;
-}
-
-nav a {
   color: #f4e9da;
-  text-decoration: none;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
 }
 
-nav a:hover {
-  text-decoration: underline;
+button:hover {
+  background-color: #c28a2c;
 }
 
 @media (max-width: 480px) {
-  header h1 {
-    font-size: 1.8rem;
-  }
-
-  main {
-    padding: 10px;
-  }
-
-  section {
-    padding: 20px;
-  }
-}
