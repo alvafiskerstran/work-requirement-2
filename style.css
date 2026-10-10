@@ -88,6 +88,24 @@ footer a:focus {
   color: #ffffff;
 }
 
+/* Intro: photo beside text, wraps on small screens */
+.intro {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 25px;
+}
+
+.intro img {
+  max-width: 220px;
+  margin: 0 auto;
+}
+
+.intro div {
+  flex: 1;
+  min-width: 200px;
+}
+
 /* Navigation */
 nav ul {
   display: flex;
